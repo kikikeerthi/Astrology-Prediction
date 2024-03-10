@@ -1,1 +1,1 @@
-just an asrtrology based website i created 
+just an asrtrology based website 
