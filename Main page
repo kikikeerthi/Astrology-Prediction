@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <h4><span>H</span>om<span>E></span> </h4>
+    <h5><a target = "#" href="/prediction.html"><span>Zodiac</span>pre<span>Diction></span></a></h5>
+    <h6><a target = "&" href="/game.html"><span>Q</span>ui<span>z></span></a></h6>
+    <h7><a target = "#" href="/comsec.html"><span>Comp</span>atibi<span>lity></span></a></h7>
+    <h8><a target = "#" href="https://imissmycafe.com/"><span>Ab</span>o<span>ut></span></a></h8>
+    <h1><code>::Astrology</code></h1>
+    <p>Astrology, type of divination that involves the forecasting of earthly and human events through the observation and interpretation of the fixed stars, the Sun, the Moon, and the planets.</p>
+    <blockquote>
+        <p>Astrology is an aesthetic affront. It cheapens astronomy, like using Beethoven for commercial jingles.</p>
+    </blockquote>
+    
+            
+
+        
+
+    
+</body>
+</html>
+<style>
+    
+
+
+/* Body styles */
+body {
+    background-color: #0a0a1e; /* Dark blue background */
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif");
+}
+h4 {
+ position: absolute; 
+ top: 0px; 
+ right: 20px; 
+ font-size: 20px;
+ color: #f88b0e;
+ margin-bottom: 20px;
+ text-align: right;
+ letter-spacing: 5px ;
+ cursor : pointer
+}
+
+h4 span {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h4:hover span {
+  text-shadow: 0 0 10px #fff, 
+ 0 0 20px #fff, 
+ 0 0 40px #fff, 
+ 0 0 80px #fff, 
+ 0 0 120px #fff, 
+ 0 0 160px #fff;
+  color: #fff;
+}
+
+h4:hover span:nth-child(1) {
+  margin-right: 30px;
+}
+
+h4:hover span:nth-child(1)::after {
+  content: ">";
+}
+
+h4:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+h4:hover span:nth-child(2)::before {
+  content: "<";
+}
+
+a:link, a:visited {
+  background-color:none;
+  color: rgb(200, 207, 236);
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: none;
+  color: #f9a9e7;
+}
+
+h5 {
+position: absolute; 
+  top: 30px; 
+  right: 20px; 
+  font-size: 20px;
+  color: #ddff00;
+  margin-bottom: 50px;
+  text-align: right;
+  letter-spacing: 5px ;
+  cursor : pointer
+}
+
+h5 span {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h5:hover span {
+  text-shadow: 0 0 10px #fff, 
+ 0 0 20px #fff, 
+ 0 0 40px #fff, 
+ 0 0 80px #fff, 
+ 0 0 120px #fff, 
+ 0 0 160px #fff;
+  color: #fff;
+}
+
+h5:hover span:nth-child(1) {
+  margin-right: 30px;
+}
+
+h5:hover span:nth-child(1)::after {
+  content: ">";
+}
+
+h5:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+h5:hover span:nth-child(2)::before {
+  content: "<";
+}
+
+h6 {
+position: absolute; 
+  top: 75px; 
+  right: 20px; 
+  font-size: 20px;
+  color: #f9a9e7;
+  margin-bottom: 50px;
+  text-align: right;
+  letter-spacing: 5px ;
+  cursor : pointer
+}
+
+h6 span {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h6:hover span {
+  text-shadow: 0 0 10px #fff, 
+ 0 0 20px #fff, 
+ 0 0 40px #fff, 
+ 0 0 80px #fff, 
+ 0 0 120px #fff, 
+ 0 0 160px #fff;
+  color: #fff;
+}
+
+h6:hover span:nth-child(1) {
+  margin-right: 30px;
+}
+
+h6:hover span:nth-child(1)::after {
+  content: ">";
+}
+
+h6:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+h6:hover span:nth-child(2)::before {
+  content: "<";
+}
+b:link {
+  color: rgb(37, 244, 255);
+  background-color: transparent;
+  text-decoration: palevioletred;
+}
+h7 {
+   position: absolute; 
+  top: 150px; 
+  right: 20px; 
+  font-size: 20px;
+  color: #f9a9e7;
+  margin-bottom: 50px;
+  text-align: right;
+  letter-spacing: 5px ;
+  cursor : pointer
+}
+
+h7 span {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h7:hover span {
+  text-shadow: 0 0 10px #fff, 
+ 0 0 20px #fff, 
+ 0 0 40px #fff, 
+ 0 0 80px #fff, 
+ 0 0 120px #fff, 
+ 0 0 160px #fff;
+  color: #fff;
+}
+
+h7:hover span:nth-child(1) {
+  margin-right: 30px;
+}
+
+h7:hover span:nth-child(1)::after {
+  content: ">";
+}
+
+h7:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+h7:hover span:nth-child(2)::before {
+  content: "<";
+}
+h8 {
+  position: absolute; 
+  top: 180px; 
+  right: 20px; 
+  font-size: 20px;
+  color: #f9a9e7;
+  margin-bottom: 50px;
+  text-align: right;
+  letter-spacing: 5px ;
+  cursor : pointer
+}
+
+h8 span {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h8:hover span {
+  text-shadow: 0 0 10px #fff, 
+ 0 0 20px #fff, 
+ 0 0 40px #fff, 
+ 0 0 80px #fff, 
+ 0 0 120px #fff, 
+ 0 0 160px #fff;
+  color: #fff;
+}
+
+h8:hover span:nth-child(1) {
+  margin-right: 30px;
+}
+
+h8:hover span:nth-child(1)::after {
+  content: ">";
+}
+
+h8:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+h8:hover span:nth-child(2)::before {
+  content: "<";
+}
+:root {
+  --color-primary: hsl(310, 100%, 65%);
+  --color-secondary: hsl(160, 100%, 65%);
+  --background: hsl(230, 30%, 15%);
+  --text: hsl(310, 100%, 95%);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--background);
+  -webkit-text-fill-color: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  gap: 4vh;
+  min-height: 100vh;
+  width: min(60ch, 100vw - 2rem);
+  margin-right: auto;
+  margin-top: 65px;
+  margin-left: auto;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+blockquote {
+  border-left: 5px solid;
+  margin-left: 0;
+  padding: 1rem 0 1rem 2rem;
+  font-size: 2rem;
+-webkit-background-clip: text;
+background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    35deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+p{
+    margin: 0;
+  }
+}
+
+
+</style>
