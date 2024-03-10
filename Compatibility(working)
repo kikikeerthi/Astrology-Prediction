@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zodiac Compatibility</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1>Zodiac Compatibility</h1>
+        <div class="form-group">
+            <label for="sign1">Select your zodiac sign:</label>
+            <select id="sign1">
+                <option value="fire">Fire</option>
+                <option value="earth">Earth</option>
+                <option value="air">Air</option>
+                <option value="water">Water</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sign2">Select the other person's zodiac sign:</label>
+            <select id="sign2">
+                <option value="fire">Fire</option>
+                <option value="earth">Earth</option>
+                <option value="air">Air</option>
+                <option value="water">Water</option>
+            </select>
+        </div>
+        <button onclick="calculateCompatibility()">Calculate Compatibility</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateCompatibility() {
+            var sign1 = document.getElementById("sign1").value;
+            var sign2 = document.getElementById("sign2").value;
+            var compatibility = "";
+
+            if ((sign1 === "fire" && (sign2 === "fire" || sign2 === "air")) ||
+                    (sign1 === "air" && (sign2 === "air" || sign2 === "fire")) ||
+                    (sign1 === "earth" && (sign2 === "earth" || sign2 === "water")) ||
+                    (sign1 === "water" && (sign2 === "water" || sign2 === "earth"))) {
+                compatibility = "High compatibility!";
+            } else {
+                compatibility = "Low compatibility.";
+            }
+
+            document.getElementById("result").textContent = compatibility;
+        }
+    </script>
+</body>
+</html>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        background-image: url("https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif");
+    }
+
+    h1 {
+        color: #f9f9f9;
+        font-size: 75px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .form-group {
+        margin-top: 50px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-top: 50px;
+        color: rgb(251, 251, 251);
+    }
+
+    select {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #98caff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    button:hover {
+        background-color: #171e24;
+    }
+
+    .result {
+        font-size: 20px;
+        margin-top: 50px;
+        color: rgb(251, 251, 251);
+    }
+</style>
