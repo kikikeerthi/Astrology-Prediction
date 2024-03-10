@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Astrology Prediction</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            background-image: url("https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif");
+            
+        }
+        
+        h1 {
+            color: #f9f9f9;
+            font-size: 75px;
+        }
+
+        label {
+            font-size: 20px;
+            margin-top: 50px;
+            color: rgb(251, 251, 251);
+        }
+        
+        .prediction {
+            font-size: 20px;
+            margin-top: 50px;
+            color: rgb(251, 251, 251);
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #98caff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+        
+        button:hover {
+            background-color: #171e24;
+        }
+        
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Astrology Prediction</h1>
+    <div>
+        <label for="zodiacSign">Enter your Zodiac Sign:</label>
+        <input type="text" id="zodiacSign" name="zodiacSign">
+    </div>
+    <div class="prediction" id="prediction"></div>
+    
+    <button onclick="generatePrediction()">Generate Prediction</button>
+    
+
+    <script>
+        function generatePrediction() {
+            var zodiacSign = document.getElementById("zodiacSign").value;
+            var predictions = {
+                "aries": "Your adventurous spirit will lead you to discover a hidden treasure chest. Unfortunately, it’ll contain only old socks and a half-eaten sandwich. But hey, at least you’ll have a story to tell!",
+                "taurus": "This week, your stubbornness will reach cosmic levels. You’ll argue with a vending machine over the last bag of chips. Spoiler alert: The vending machine wins",
+                "gemini": "Your dual nature will be on full display. You’ll simultaneously binge-watch a heartwarming rom-com and a spine-chilling horror movie. Good luck sleeping tonight!",
+                "cancer": "The stars predict a sudden urge to redecorate your home. You’ll replace all your furniture with inflatable flamingos. Your guests will be both confused and impressed.",
+                "leo": "Your charisma will skyrocket. You’ll convince your pet goldfish to start a YouTube channel. Expect viral videos of fish swimming in circles.",
+                "virgo": "Your attention to detail will lead you to discover a secret society of dust bunnies under your bed. They’ll offer you a membership. Decline politely.",
+                "libra": "Your indecisiveness will peak. You’ll spend hours choosing between two identical socks. Spoiler: They’re both left socks.",
+                "scorpio": "The stars say you’ll receive a mysterious love letter. Turns out, it’s from your WiFi router. It’s been secretly in love with your smartphone all along.",
+                "sagittarius": "Your wanderlust will lead you to explore new realms. You’ll accidentally step into a parallel universe where everyone communicates through interpretive dance. Get those jazz hands ready!",
+                "capricorn": "Your ambition will soar. You’ll invent a new language called “Penguinese” and become fluent in it. Penguins worldwide will applaud your efforts.",
+                "aquarius": "The cosmos predict a sudden obsession with glitter. You’ll sprinkle it on everything: your coffee, your cat, and even your tax returns. Shine bright, Aquarius!",
+                "pisces": "Your intuition will guide you to the lost city of Socktopia. Legend has it that mismatched socks find their soulmates there. Prepare for a sock reunion!"
+            };
+
+            var prediction = predictions[zodiacSign.toLowerCase()];
+            if (prediction) {
+                document.getElementById("prediction").innerHTML = prediction;
+            } else {
+                document.getElementById("prediction").innerHTML = "Invalid Zodiac Sign. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>
