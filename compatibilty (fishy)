@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Zodiac Matching</title>
+    <script>
+        function checkCompatibility() {
+            var zodiac1 = document.getElementById("zodiac1").value.toLowerCase();
+            var zodiac2 = document.getElementById("zodiac2").value.toLowerCase();
+            var compatibility = "";
+
+            if (zodiac1 === zodiac2) {
+                compatibility = "Perfect match!";
+            } else {
+                switch (zodiac1) {
+                    case "aries":
+                        if (zodiac2 === "leo") {
+                            compatibility = "highly compatible because they share many qualities—they're both loyal, energetic, and adventurous. To avoid conflict, they need to focus on encouraging each other.";
+                        } else if (zodiac2 === "sagittarius") {
+                            compatibility = "Aries and Sagittarius are a pretty good fit, because they have a lot of interests. They are both extremely inquisitive as well as energetic talkative, and playful individuals. Both are pioneers and explorers. This is a tumultuous and fascinating connection in which both parties are constantly up for a new experience.";
+                        } else if (zodiac2 === "gemini") {
+                            compatibility = "Aries and Gemini are a good match because they are both curious, energetic, and adventurous individuals. They are both pioneers and explorers. This is a tumultuous and fascinating connection in which both parties are constantly up for a new experience.";
+                        } else if (zodiac2 === "aquarius") {
+                            compatibility = "Aquarius and Aries have the potential for electrifying compatibility. Both are adventurous, intelligent and innovative. Aquarius' forward-thinking pairs well with Aries' dynamic energy. This creates a potent combination of creativity and the action needed to get things done";
+                        } else if (zodiac2 === "libra") {
+                            compatibility = "Libra and Aries's relationship can be described as a bit tense, with Libra usually being more passive. ";
+                        } else if (zodiac2 === "capricorn") {
+                            compatibility = "In astrology, the planets Mars and Saturn do not share a good bond, which is something that reflects in Aries and Capricorn compatibility in friendship.";
+                        } else if (zodiac2 === "cancer") {
+                            compatibility = "Aries and Cancer are super compatible as friends! They'll always stand by each other and bring out the best in one another. An Aries friend will protect Cancer in social situations, while a Cancer friend will give Aries a sense of emotional security. ";
+                        } else if (zodiac2 === "scorpio") {
+                            compatibility = "An Aries and Scorpio friendship can be a dynamic blend of passion, drive, and loyalty. Aries' bold spirit helps lighten and motivate Scorpio's darker and moodier intensity. ";
+                        } else if (zodiac2 === "virgo") {
+                            compatibility = "The contrast between Aries and Virgo can bring a beautiful balance to the friendship. Aries will provide enthusiasm and energy, while Virgo emits a sense of stability and security. Aries loves to be a bit impulsive and direct, whereas Virgo is more likely to think before acting.";
+                        } else if (zodiac2 === "taurus") {
+                            compatibility = "Aries likes Taurus' stability, while Taurus likes Aries' energy. But sometimes, Aries' fast decisions can clash with Taurus' need for safety. To make it work, they need to talk a lot and find ways to make each other happy.";
+                        } else if (zodiac2 === "pisces") {
+                            compatibility = "Aries and Pisces can be good friends even though they're different. Aries is strong and confident, while Pisces is gentle and caring. Sometimes, Aries might find Pisces too sensitive, and Pisces might think Aries is too pushy.";
+                        } else {
+                            compatibility = "Not a good match.";
+                        }
+                        break;
+                    case "taurus":
+                        if (zodiac2 === "leo" || zodiac2 === "sagittarius" || zodiac2 === "gemini" || zodiac2 === "aquarius" || zodiac2 === "libra" || zodiac2 === "capricorn" || zodiac2 === "cancer" || zodiac2 === "scorpio" || zodiac2 === "virgo" || zodiac2 === "pisces") {
+                            compatibility = "Both of you possess a strong sense of commitment that sometimes keeps you in relationships, even if they aren't the healthiest. However, the stability and trust you offer each other can only go so far, especially between two very stubborn zodiac signs.";
+                        } else if (zodiac2 === "scorpio") {
+                            compatibility = "Scorpio and Taurus can be a surprising match due to their shared intensity and desire for intimacy. Their connection can be strong and passionate.";
+                        } else if (zodiac2 === "virgo" || zodiac2 === "capricorn") {
+                            compatibility = "Taurus and " + zodiac2 + " share a grounded nature, which can bring practicality, ambition, and security to the relationship.";
+                        } else if (zodiac2 === "cancer" || zodiac2 === "scorpio" || zodiac2 === "pisces") {
+                            compatibility = "Taurus and " + zodiac2 + " can have a potential for compatibility. Water signs can balance Taurus's earthiness and bring emotional connection, passion, and creativity.";
+                        } else if (zodiac2 === "aries" || zodiac2 === "leo" || zodiac2 === "sagittarius") {
+                            compatibility = "Taurus and " + zodiac2 + " have lower compatibility due to the clash between Taurus's need for stability and fire signs' impulsive and fast-paced nature.";
+                        } else if (zodiac2 === "gemini" || zodiac2 === "libra" || zodiac2 === "aquarius") {
+                            compatibility = "Taurus and " + zodiac2 + " might have lower compatibility due to the difference in energy and focus. Air signs' intellectual and social energy may not resonate with Taurus's need for comfort and routine.";
+                        } else {
+                            compatibility = "Not a good match.";
+                        }
+                        break;
+                    case "gemini":
+                    if (zodiac2 === "leo") {
+                        compatibility = "highly compatible because they share many qualities—they're both loyal, energetic, and adventurous. To avoid conflict, they need to focus on encouraging each other.";
+                    } else if (zodiac2 === "sagittarius" || zodiac2 === "aquarius" || zodiac2 === "libra") {
+                        compatibility = "Gemini and " + zodiac2 + " are a good match because they share intellectual curiosity and love for communication. This creates a mentally stimulating and easygoing connection.";
+                    } else if (zodiac2 === "aries" || zodiac2 === "leo" || zodiac2 === "sagittarius") {
+                        compatibility = "Gemini and " + zodiac2 + " have good compatibility due to the balance between Gemini's air and fire signs' enthusiasm and adventurous spirit. They can keep up with Gemini's social energy and love for new experiences.";
+                    } else if (zodiac2 === "cancer") {
+                        compatibility = "Gemini and Cancer can have a good compatibility. Cancer can offer Gemini a sense of security and emotional depth they crave, while Gemini can stimulate Cancer intellectually and keep things light.";
+                    } else if (zodiac2 === "taurus" || zodiac2 === "virgo" || zodiac2 === "capricorn") {
+                        compatibility = "Gemini and " + zodiac2 + " might have lower compatibility due to the clash between Gemini's fickleness and scattered nature and earth signs' need for stability and routine.";
+                    } else {
+                        compatibility = "Not a good match.";
+                    }
+                    break;
+                    case "cancer":
+                    
+                        if (zodiac2 === "leo") {
+                            compatibility = "could be challenging";
+                        } else if (zodiac2 === "sagittarius" || zodiac2 === "gemini" || zodiac2 === "aquarius" || zodiac2 === "libra" || zodiac2 === "capricorn" || zodiac2 === "cancer" || zodiac2 === "scorpio" || zodiac2 === "virgo" || zodiac2 === "taurus" || zodiac2 === "pisces") {
+                            compatibility = "Cancer and " + zodiac2 + " are a good match because they are both curious, energetic, and adventurous individuals. They are both pioneers and explorers. This is a tumultuous and fascinating connection in which both parties are constantly up for a new experience.";
+                        } else if (zodiac2 === "aries" || zodiac2 === "gemini" || zodiac2 === "leo" || zodiac2 === "sagittarius" || zodiac2 === "aquarius") {
+                            compatibility = "Cancer and " + zodiac2 + " have lower compatibility due to Cancer's need for emotional connection and the independent nature of " + zodiac2 + ".";
+                        } else if (zodiac2 === "taurus" || zodiac2 === "virgo" || zodiac2 === "scorpio" || zodiac2 === "pisces") {
+                            compatibility = "Cancer and " + zodiac2 + " have strong compatibility due to the shared element of water and the emotional depth they both possess.";
+                        } else if (zodiac2 === "libra" || zodiac2 === "capricorn") {
+                            compatibility = "Cancer and " + zodiac2 + " have potential for compatibility, but they need to work on communication and finding a balance between Cancer's emotional needs and " + zodiac2 + "'s practicality.";
+                        } else {
+                            compatibility = "Not a good match.";
+                        }
+                        break;
+                    case "leo":
+                    if (zodiac2 === "leo") {
+                        compatibility = "Leo and " + zodiac2 + " are highly compatible because they share many qualities—they're both loyal, energetic, and adventurous. To avoid conflict, they need to focus on encouraging each other.";
+                    } else if (zodiac2 === "sagittarius" || zodiac2 === "gemini" || zodiac2 === "aquarius" || zodiac2 === "libra") {
+                        compatibility = "Leo and " + zodiac2 + " are a good match because they share intellectual curiosity and love for communication. This creates a mentally stimulating and easygoing connection.";
+                    } else if (zodiac2 === "aries" || zodiac2 === "sagittarius") {
+                        compatibility = "Leo and " + zodiac2 + " have good compatibility due to the balance between Leo's fire and " + zodiac2 + "'s enthusiasm and adventurous spirit. They can keep up with each other's energy and love for new experiences.";
+                    } else if (zodiac2 === "taurus" || zodiac2 === "virgo" || zodiac2 === "capricorn") {
+                        compatibility = "Leo and " + zodiac2 + " might have lower compatibility due to the clash between Leo's need for attention and the earth signs' need for stability and routine. However, with compromise and understanding, they can create a harmonious balance.";
+                    } else if (zodiac2 === "cancer" || zodiac2 === "scorpio" || zodiac2 === "pisces") {
+                        compatibility = "Leo and " + zodiac2 + " have less compatibility due to the differences in emotional expression. Leo's flamboyant personality might clash with the water signs' sensitivity. However, with open communication and understanding, they can find common ground.";
+                    } else {
+                        compatibility = "Not a good match.";
+                    }
+                    break;
+                    default:
+                        compatibility = "eh...could be a bit tipsy.";
+                        break;
+                    case "virgo":
+                    if (zodiac1 === "virgo") {
+                        switch (zodiac2) {
+                            case "aries":
+                                compatibility = "Virgo and Aries can have a challenging connection due to their contrasting personalities. Aries is impulsive and energetic, while Virgo is practical and analytical. However, with open communication and compromise, they can learn from each other and create a balanced relationship.";
+                                break;
+                            case "taurus":
+                                compatibility = "Earth Signs (Taurus, Capricorn): Sharing the element of earth, Taurus and Capricorn naturally understand Virgo's grounded nature. They value similar things like stability, routine, and getting things done. This creates a harmonious and easy-going connection.";
+                                break;
+                            case "gemini":
+                                            compatibility = "Gemini (opposite sign): Opposites attract! Gemini, the opposite sign of Virgo on the zodiac wheel, can bring a welcome dose of creativity and spontaneity into Virgo's life. Virgo can provide practicality and organization for the more scattered Gemini.";
+                                            break;
+                                        case "cancer":
+                                            compatibility = "Water Signs (Cancer, Scorpio): While water and earth are different elements, they can be complementary. Cancer and Scorpio, both water signs, appreciate Virgo's caring and thoughtful side. Virgo, in turn, benefits from the emotional depth water signs offer.";
+                                            break;
+                                        case "leo":
+                                            compatibility = "Leo (opposite sign): Opposites attract! Leo, the opposite sign of Virgo on the zodiac wheel, can bring a sense of excitement and passion into Virgo's life. Virgo can provide practicality and stability for the more dramatic Leo.";
+                                            break;
+                                        case "virgo":
+                                            compatibility = "Virgo and Virgo can have a strong connection due to their shared values of practicality, organization, and attention to detail. They understand each other's need for order and can create a harmonious and efficient partnership.";
+                                            break;
+                                        case "libra":
+                                            compatibility = "Virgo and Libra can have a potential for compatibility. Libra's diplomatic and harmonious nature can balance Virgo's practicality and attention to detail. Together, they can create a balanced and harmonious relationship.";
+                                            break;
+                                        case "scorpio":
+                                            compatibility = "Scorpio (opposite sign): Opposites attract! Scorpio, the opposite sign of Virgo on the zodiac wheel, can bring intensity and passion into Virgo's life. Virgo can provide stability and practicality for the more intense Scorpio.";
+                                            break;
+                                        case "sagittarius":
+                                            compatibility = "Virgo and Sagittarius can have a challenging connection due to their contrasting personalities. Sagittarius is adventurous and spontaneous, while Virgo is practical and analytical. However, with open communication and compromise, they can learn from each other and create a balanced relationship.";
+                                            break;
+                                        case "capricorn":
+                                            compatibility = "Earth Signs (Taurus, Capricorn): Sharing the element of earth, Taurus and Capricorn naturally understand Virgo's grounded nature. They value similar things like stability, routine, and getting things done. This creates a harmonious and easy-going connection.";
+                                            break;
+                                        case "aquarius":
+                                            compatibility = "Virgo and Aquarius can have a challenging connection due to their contrasting personalities. Aquarius is independent and unconventional, while Virgo is practical and analytical. However, with open communication and compromise, they can learn from each other and create a balanced relationship.";
+                                            break;
+                                        case "pisces":
+                                            compatibility = "Pisces (opposite sign): Opposites attract! Pisces, the opposite sign of Virgo on the zodiac wheel, can bring a welcome dose of creativity and intuition into Virgo's life. Virgo can provide grounding and stability for the more dreamy Pisces.";
+                                            break;
+                                        default:
+                                            compatibility = "Not a good match.";
+                                            break;
+                                    }
+                                    break; // Add break statement here
+                                }
+                                
+                               
+                                    compatibility = "eh...could be a bit tipsy.";
+                                    break;
+                                
+                                case "libra":
+                                if (zodiac1 === "libra") {
+                                    switch (zodiac2) {
+                                        case "gemini":
+                                        case "aquarius":
+                                            compatibility = "Air Signs (Gemini, Aquarius): Sharing the element of air, these signs value communication and social connection. Gemini's wit and Aquarius' progressive ideas keep Libra stimulated.";
+                                            break;
+                                        case "aries":
+                                        case "leo":
+                                        case "sagittarius":
+                                            compatibility = "Fire Signs (Aries, Leo, Sagittarius): Fire signs bring passion and excitement to Libra's life. Libra can temper the fire's impulsiveness while appreciating their zest. Particularly with Leo, they share a love for beauty and romance.";
+                                            break;
+                                        case "libra":
+                                            compatibility = "Libra (Libra): Two Libras create a super harmonious and easygoing relationship, but might struggle with decisiveness.";
+                                            break;
+                                        case "cancer":
+                                        case "scorpio":
+                                        case "pisces":
+                                            compatibility = "Water Signs (Cancer, Scorpio, Pisces): A hit or miss depending on the water sign's ability to connect emotionally. Libra might find their intensity overwhelming at times.";
+                                            break;
+                                        case "taurus":
+                                        case "virgo":
+                                        case "capricorn":
+                                            compatibility = "Earth Signs (Taurus, Virgo, Capricorn): Earth signs offer stability and groundedness that Libra appreciates. However, Libra's indecisiveness might clash with Taurus' stubbornness.";
+                                            break;
+                                        default:
+                                            compatibility = "Not a good match.";
+                                            break;
+                                    }
+                                    break; // Add break statement here
+                                }
+                                case "scorpio":
+                                if (zodiac1 === "scorpio") {
+                                    switch (zodiac2) {
+                                        case "cancer":
+                                        case "pisces":
+                                            compatibility = "Water Signs (Cancer, Pisces): Share emotional depth and understanding, creating a nurturing and supportive bond.";
+                                            break;
+                                        case "taurus":
+                                        case "virgo":
+                                        case "capricorn":
+                                            compatibility = "Earth Signs (Taurus, Virgo, Capricorn): Stability and grounding from Taurus balances Scorpio's intensity, creating a strong and secure partnership.";
+                                            break;
+                                        case "gemini":
+                                        case "aquarius":
+                                            compatibility = "Air Signs (Gemini, Aquarius): Air sign's lightheartedness might not resonate with Scorpio's emotional depth.";
+                                            break;
+                                        case "aries":
+                                        case "leo":
+                                        case "sagittarius":
+                                            compatibility = "Fire Signs (Aries, Leo, Sagittarius): Fire sign's impulsiveness might clash with Scorpio's need for emotional intensity.";
+                                            break;
+                                        case "libra":
+                                        case "scorpio":
+                                            compatibility = "Libra (Libra): Focus on harmony might be at odds with Scorpio's intensity.";
+                                            break;
+                                        default:
+                                            compatibility = "Not a good match.";
+                                            break;
+                                    }
+                                    break; // Add break statement here
+                                }
+                                case "sagittarius":
+                                if (zodiac1 === "sagittarius") {
+                                    switch (zodiac2) {
+                                        case "aries":
+                                        case "leo":
+                                            compatibility = "Fire Signs (Aries, Leo): Sharing the fire element, these signs naturally understand Sagittarius' zest for life. Aries keeps things exciting, while Leo appreciates Sagittarius' optimism.";
+                                            break;
+                                        case "gemini":
+                                        case "libra":
+                                        case "aquarius":
+                                            compatibility = "Air Signs (Gemini, Libra, Aquarius): Air fuels Sagittarius' fire. Gemini's wit matches their intellect, Libra brings balance, and Aquarius shares their love for new experiences.";
+                                            break;
+                                        case "taurus":
+                                        case "virgo":
+                                        case "capricorn":
+                                            compatibility = "Earth Signs (Taurus, Virgo, Capricorn): Opposites attract! Earth signs can ground Sagittarius' adventurous spirit, but they need to be flexible enough for Sagittarius' need for freedom.";
+                                            break;
+                                        case "cancer":
+                            case "scorpio":
+                            case "pisces":
+                                compatibility = "Water Signs (Cancer, Scorpio, Pisces): Water can dampen Sagittarius' fire. Water signs crave emotional depth, which might clash with Sagittarius' casual nature.";
+                                break;
+                            default:
+                                compatibility = "Not a good match.";
+                                break;
+                        }
+                    }
+                    case "capricorn":
+                    if (zodiac1 === "capricorn") {
+                                            switch (zodiac2) {
+                                                case "taurus":
+                                                case "virgo":
+                                                    compatibility = "Earth Signs (Taurus, Virgo): They share Capricorn's practicality, work ethic, and focus on building a secure future, creating a harmonious and supportive bond.";
+                                                    break;
+                                                case "cancer":
+                                                                                                case "scorpio":
+                                                                                                case "pisces":
+                                                                                                    compatibility = "Water Signs (Cancer, Scorpio, Pisces): While opposites attract, Capricorns find balance with water signs' emotional depth and nurturing nature. Cancer offers emotional security, Scorpio provides passionate intensity, and Pisces brings empathy and understanding.";
+                                                                                                    break;
+                                                                                                case "gemini":
+                                                                                                case "libra":
+                                                                                                case "aquarius":
+                                                                                                    compatibility = "Air Signs (Gemini, Libra, Aquarius): Air signs' social butterfly tendencies and need for intellectual stimulation might not resonate with Capricorn's grounded personality.";
+                                                                                                    break;
+                                                                                                case "aries":
+                                                                                                case "leo":
+                                                                                                case "sagittarius":
+                                                                                                    compatibility = "Fire Signs (Aries, Leo, Sagittarius): Fire signs' impulsive and freedom-loving nature can clash with Capricorn's need for structure and planning.";
+                                                                                                    break;
+                                                                                                default:
+                                                                                                    compatibility = "Not a good match.";
+                                                                                                    break;
+                                                                    case "pisces":
+                                                                    if (zodiac1 === "pisces") {
+                                                                        switch (zodiac2) {
+                                                                            case "cancer":
+                                                                            case "scorpio":
+                                                                                compatibility = "Water Signs (Cancer, Scorpio): Share emotional depth and understanding, creating a nurturing and supportive bond.";
+                                                                                break;
+                                                                            case "taurus":
+                                                                            case "capricorn":
+                                                                                compatibility = "Earth Signs (Taurus, Capricorn): Sharing a love for beauty, creativity, and sensuality, Taurus provides grounding and practicality that Pisces might crave. Capricorn's ambition and practicality balance Pisces' dreamy nature.";
+                                                                                break;
+                                                                            case "leo":
+                                                                            case "virgo":
+                                                                            case "libra":
+                                                                                compatibility = "Medium Compatibility: Leo's fiery personality might clash with Pisces' sensitivity, but the artistic connection can be strong. Virgo's practicality can sometimes come across as harsh to Pisces, but their shared sense of compassion can create a bond. Libra's indecisiveness and need for social interaction might frustrate Pisces' desire for deeper connection.";
+                                                                                break;
+                                                                            case "aries":
+                                                                            case "gemini":
+                                                                            case "sagittarius":
+                                                                            case "aquarius":
+                                                                                compatibility = "Low Compatibility: Aries' impulsive nature might clash with Pisces' need for emotional security. Gemini's lightheartedness might be too much for Pisces' emotional depth. Sagittarius' love for freedom might feel like a lack of commitment to Pisces. Aquarius' intellectual detachment might be hard for Pisces' emotional sensitivity.";
+                                                                                break;
+                                                                    default:
+                                                                        compatibility = "Not a good match.";
+                                                                        break;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                    </script>
+                                                </head>
+                                                <body>
+                                                    <h1>Zodiac Matching</h1>
+                                                    <label for="zodiac1">Zodiac Sign 1:</label>
+                                                    <input type="text" id="zodiac1">
+                                                    <br>
+                                                    <label for="zodiac2">Zodiac Sign 2:</label>
+                                                    <input type="text" id="zodiac2">
+                                                    <br>
+                                                    <button onclick="checkCompatibility()">Check Compatibility</button>
+                                                    <br>
+                                                    <p id="compatibilityResult"></p>
+</body>
+</html>
+                                                <style>
+                                                    body {
+                                                        font-family: "Poppins", sans-serif;
+                                                        text-align: center;
+                                                        background-image: url("https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif");
+                                                    }
+                                                    h1 {
+                                                        color: #f9f9f9;
+                                                        font-size: 75px;
+                                                    }
+                                                    label {
+                                                        font-size: 20px;
+                                                        margin-top: 50px;
+                                                        color: rgb(251, 251, 251);
+                                                    }
+                                                    input {
+                                                        font-size: 20px;
+                                                        margin-top: 20px;
+                                                    }
+                                                    button {
+                                                        padding: 10px 20px;
+                                                        background-color: #98caff;
+                                                        color: #fff;
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        font-size: 16px;
+                                                        margin-top: 50px;
+                                                    }
+                                                    button:hover {
+                                                        background-color: #171e24;
+                                                    }
+                                                    p {
+                                                        font-size: 20px;
+                                                        margin-top: 50px;
+                                                        color: rgb(251, 251, 251);
+                                                    }
+                                                </style>
