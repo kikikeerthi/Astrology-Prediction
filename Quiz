@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Astrology Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Astrology Game</h1>
+    
+    <div id="question-container">
+        <h2 id="question">Question goes here</h2>
+        <div id="options">
+            <button class="option">Option 1</button>
+            <button class="option">Option 2</button>
+            <button class="option">Option 3</button>
+            <button class="option">Option 4</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+    // Define an array of questions and options
+    var questions = [
+        {
+            question: "What is the ruling planet of Aries?",
+            options: ["Mars", "Venus", "Mercury", "Jupiter"],
+            answer: 0
+        },
+        {
+            question: "Which zodiac sign is represented by the lion?",
+            options: ["Leo", "Virgo", "Cancer", "Libra"],
+            answer: 0
+        },
+        {
+            question: "What is the element of Aquarius?",
+            options: ["Fire", "Earth", "Air", "Water"],
+            answer: 2
+        },
+        {
+            question: "What’s a Pisces’ favorite bedtime story?",
+            options: ["Little Mermaid", "Cindrella", "Little prince", "Capricorn"],
+            answer: 0
+        },
+        // Add more questions and options here
+    ];
+
+    // Get DOM elements
+    var questionContainer = document.getElementById("question-container");
+    var questionElement = document.getElementById("question");
+    var optionsContainer = document.getElementById("options");
+    var options = Array.from(document.getElementsByClassName("option"));
+
+    // Initialize game state
+    var currentQuestionIndex = 0;
+    var score = 0;
+
+    // Function to load a question
+    function loadQuestion() {
+        var currentQuestion = questions[currentQuestionIndex];
+        questionElement.textContent = currentQuestion.question;
+
+        options.forEach(function (option, index) {
+            option.textContent = currentQuestion.options[index];
+        });
+    }
+
+    // Function to check the answer
+    function checkAnswer(selectedOption) {
+        var currentQuestion = questions[currentQuestionIndex];
+        var selectedOptionIndex = options.indexOf(selectedOption);
+        if (selectedOptionIndex === currentQuestion.answer) {
+            score++;
+        }
+
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex === questions.length) {
+            // Game over, show the final score
+            questionContainer.innerHTML = "<h2>Game Over</h2><p>Your score: " + score + "</p>";
+        } else {
+            // Load the next question
+            loadQuestion();
+        }
+    }
+
+    // Add click event listeners to options
+    options.forEach(function (option) {
+        option.addEventListener("click", function () {
+            checkAnswer(option);
+        });
+    });
+
+    // Start the game
+    loadQuestion();
+</script>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        background-image: url("https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif");
+    }
+
+    h1 {
+        color: #f9f7f7;
+        font-size: 75px;
+    }
+    
+
+    #question-container {
+        margin-top: 2rem;
+        color: #f9f7f7;
+    }
+
+    #question {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #f9f7f7;
+    }
+
+    .option {
+        padding: 10px 20px;
+        background-color: #82b8f2;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0.5rem;
+    }
+
+    .option:hover {
+        background-color: #0056b3;
+    }
+</style>
